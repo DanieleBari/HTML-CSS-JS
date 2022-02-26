@@ -1,59 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
 /********** Base styles **********/
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+}
+h1 {
+  margin-bottom: 15px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: wheat;
-}
-
-.box {
-  background-color: #A52A2A;
-  padding: 10px;
+p {
   border: 1px solid black;
-  position: relative;
+  background-color: #A52A2A;
+  width: 90%;
+  height: 150px;
   margin-right: auto;
   margin-left: auto;
-  float: left;
-  height: auto;
-  width: 100%;
-  font-family: Helvetica;
-  color: black;
-}
-
-
-/*p {
-  padding: 10px 25px 10px 25px;
-  width:  100px;
-  border: 2px solid black;
-  font-family: Helvetica;
-  color: black;
-}*/
-
-h1 {
-  text-align: center;
-}
-
-.chicken_title{
-  background-color: blue;
-  padding: 10px 25px 10px 25px;
-  width:  auto;
-  border: 1px solid black;
   font-family: Helvetica;
   color: white;
-  float: right;
-  position: relative;
-  top:  -11px;
-  right:  -11px;
-}
-
-.section_desc {
-  clear:  right;
-  text-align: justify;
 }
 
 /* Simple Responsive Framework. */
@@ -61,13 +30,11 @@ h1 {
   width: 100%;
 }
 
-
 /********** Large devices only **********/
-@media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 
-  {
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    margin: 15px;
+    border: 1px solid green;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -108,10 +75,10 @@ h1 {
 }
 
 /********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    margin: 15px;
+    border: 1px solid green;
   }
   .col-md-1 {
     width: 8.33%;
@@ -150,3 +117,22 @@ h1 {
     width: 100%;
   }
 }
+
+</style>
+</head>
+<body>
+<h1>Responsive Layout</h1>
+
+<div class="row">
+  <div class="col-lg-3 col-md-6"><p>Item 1</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 2</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 3</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 4</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 5</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 6</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 7</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 8</p></div>
+</div>
+
+</body>
+</html>

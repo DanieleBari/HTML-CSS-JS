@@ -1,0 +1,84 @@
+/********** Base styles **********/
+{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  padding-bottom: 70px;
+  background-color: floralwhite;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  font-size: 16px;
+}
+
+#header-nav {
+  border-radius: 0px;
+  border: 0px;
+  padding: 15px;
+  background-color:  lightblue;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  /*text-decoration: none;*/
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 2em;
+  color:  black;
+}
+
+h1 {
+  padding: 5px 0px 15px 0px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+h2 {
+  padding: 0px;
+  font-weight: bold;
+}
+
+
+h4 {
+  padding: 10px 0px 10px 0px;
+  font-weight: bold;
+}
+
+#navbarSupportedContent{
+  background-color: whitesmoke;
+  padding: 0px;
+  margin:  0px;
+  border: 2px solid black;
+}
+
+#title{
+  text-align: center;
+}
+
+.row{
+  margin-bottom: 15px;
+  padding: 25px;
+}
+
+#section_desc{
+  background-color: whitesmoke;
+  text-align: justify;
+  padding: 0px;
+}
+
+#toggler {
+  border: 2px solid black;
+  clear: both;
+}
+
+#navbarSupportedContent a.nav-link{
+  border: 1px solid black;
+}
+
+/*#nav-list{
+ margin-bottom: 0px;
+}*/

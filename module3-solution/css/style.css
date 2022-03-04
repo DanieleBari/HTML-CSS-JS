@@ -43,7 +43,7 @@ h2 {
 }
 
 
-h4 {
+h3 {
   padding: 10px 0px 10px 0px;
   font-weight: bold;
 }
@@ -61,13 +61,17 @@ h4 {
 
 .row{
   margin-bottom: 15px;
-  padding: 25px;
+  padding: 20px;
 }
 
-#section_desc{
+.section_desc{
   background-color: whitesmoke;
   text-align: justify;
-  padding: 0px;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 #toggler {
